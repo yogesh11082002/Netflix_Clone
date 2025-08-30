@@ -224,3 +224,16 @@
     width: 35px;
   }
 }
+
+/* Hide Children text on mobile */
+@media (max-width: 768px) {
+  .cp {
+    display: none;
+  }
+
+  .navbar-right .icons:first-child {
+    width: 26px; /* larger search icon */
+  }
+
+  
+}
