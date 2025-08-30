@@ -168,16 +168,6 @@
     gap: 18px;
   }
 
-  /* hide Children text */
-  .navbar-right p {
-    display: none;
-  }
-
-  /* make search icon bigger */
-  .navbar-right .icons.search {
-    width: 26px;
-  }
-
   /* sidebar menu */
   .navbar-left ul {
     position: fixed;
@@ -223,12 +213,7 @@
   }
 
   .navbar-right {
-    gap: 14px;
-  }
-
-  /* search icon even bigger on very small screens */
-  .navbar-right .icons.search {
-    width: 28px;
+    gap: 16px;
   }
 
   .navbar-right .icons {
