@@ -40,7 +40,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-right">
-          <img src={search_icon} alt="search icon" className="icons" />
+          <img src={search_icon} alt="search icon" className="icons search" />
+
           <p>Children</p>
           <img src={bell_icon} alt="bell icon" className="icons" />
 
