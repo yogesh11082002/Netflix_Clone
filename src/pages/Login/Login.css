@@ -1,0 +1,153 @@
+/* ---------- Login Page ---------- */
+.login {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/background_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ---------- Logo ---------- */
+.login-logo {
+  width: 160px;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+/* ---------- Login Form ---------- */
+.login-form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px 30px;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ---------- Inputs ---------- */
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #bbb;
+}
+
+/* ---------- Button ---------- */
+.login-form button {
+  padding: 12px;
+  background: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #f40612;
+}
+
+/* ---------- Form Help ---------- */
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 10px;
+}
+
+.form-help .remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-help input {
+  accent-color: #e50914;
+  cursor: pointer;
+}
+
+.form-help p {
+  cursor: pointer;
+}
+.form-help p:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .login-form {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .login-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form h1 {
+    font-size: 22px;
+  }
+
+  .login-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ---------- Form Switch Section ---------- */
+.form-switch {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.form-switch p {
+  margin: 8px 0;
+}
+
+.form-switch span {
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.form-switch span:hover {
+  color: #e50914; /* Netflix red */
+}

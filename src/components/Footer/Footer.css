@@ -25,7 +25,7 @@
   transform: scale(1.1);
 }
 
-/* Footer Links in 4 columns */
+/* Footer Links in 4 columns by default */
 .footer-links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,18 +57,12 @@
 /* Responsive */
 @media (max-width: 768px) {
   .footer-links {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* Always 2 columns on phones/tablets */
     gap: 10px 15px;
   }
 
   .footer-icons img {
     width: 25px;
     height: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-links {
-    grid-template-columns: 1fr; /* 1 column on mobile */
   }
 }
