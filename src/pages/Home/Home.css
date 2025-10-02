@@ -29,7 +29,7 @@
 }
 
 .hero-caption p {
-  max-width: 90%;
+  max-width: 40%;
   font-size: clamp(13px, 2vw, 18px); /* responsive font */
   margin-bottom: 1.2rem;
   line-height: 1.5;
@@ -142,4 +142,9 @@
     width: 100%; /* full-width buttons */
     justify-content: center;
   }
+}
+
+.more-cards{
+  padding: 6% 0% 6% 6%;
+  
 }

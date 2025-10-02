@@ -1,0 +1,122 @@
+/* ---------- Title Cards Container ---------- */
+.titlecards {
+  padding: 20px 0px;
+  margin-bottom: -50px;
+  color: #fff;
+}
+
+/* ---------- Card List Horizontal Scroll ---------- */
+.card-list {
+  display: flex;           /* put all cards in a row */
+  gap: 20px;               /* space between cards */
+  overflow-x: auto;        /* allow horizontal scrolling */
+  padding-bottom: 10px;    /* optional: space for scrollbar */
+  scroll-behavior: smooth; /* smooth scrolling */
+}
+
+/* Hide default scrollbar (optional) */
+.card-list::-webkit-scrollbar {
+  display: none;
+}
+.card-list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* ---------- Individual Card ---------- */
+.card {
+  flex: 0 0 auto;           /* prevent shrinking, keep width */
+  width: 160px;             /* fixed width for each card */
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 1024px) {
+  .card {
+    width: 140px;
+  }
+  .card-list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titlecards {
+    padding: 40px 5% 30px;
+  }
+
+  .titlecards h2 {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 130px;
+  }
+  .card-list {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlecards {
+    padding: 30px 4% 25px;
+  }
+
+  .titlecards h2 {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 120px;
+  }
+  .card-list {
+    gap: 12px;
+  }
+
+  .card p {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
