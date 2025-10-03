@@ -77,7 +77,7 @@ const Login = () => {
       <div className="login-form">
         <h1>{isSignIn ? "Sign In" : "Sign Up"}</h1>
         <form onSubmit={handleSubmit}>
-          {/* Show Name input only in Sign Up */}
+         
           {!isSignIn && (
             <input
               type="text"
